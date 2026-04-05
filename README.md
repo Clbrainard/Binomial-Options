@@ -32,8 +32,6 @@ Accuracy is reported as mean absolute percentage error (MAPE) at varying step co
 | American Call | `1.114` | `0.577` | `0.248` | `0.054` |
 | American Put  | `0.866` | `0.379` | `0.139` | `0.034` |
 
-> *Insert MAPE vs. N convergence plot here*
-
 ## Key Findings
 
 MAPE decreases steadily as $N$ increases across all four instrument types. At $N = 1000$ all instruments price within 0.06% MAPE of the QuantLib Crank-Nicolson reference.
