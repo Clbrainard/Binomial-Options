@@ -58,12 +58,16 @@ double european_call = priceEuropeanCall(S, v, T, N, K, r);
 ```
 
 ### Validation runner
-
+1.Select a validation dataset from the validation folder and assign path to 'datasetPath' variable in main
+2.Select option type by assigning pricingType to one of the following values:
 ```cpp
-// In Testers.cpp — set pricingType and datasetPath, then:
-// 1 = European Call, 2 = European Put, 3 = American Call, 4 = American Put
-./pricer   // enter N at the prompt; outputs mean absolute percentage error
+1 = European Call,
+2 = European Put,
+3 = American Call,
+4 = American Put
 ```
+3.Compile and run both Tester and Pricer together. After running the user will be prompted and allowed to select number of time steps used.
+4.Mean absolute percent error between the dataset price and the model price is returned
 
 ## References
 
