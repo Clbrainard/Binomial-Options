@@ -32,8 +32,6 @@ Accuracy is reported as mean absolute percentage error (MAPE) at varying step co
 | American Call | `1.114` | `0.577` | `0.248` | `0.054` |
 | American Put  | `0.866` | `0.379` | `0.139` | `0.034` |
 
-> *Insert MAPE vs. N convergence plot here*
-
 ## Key Findings
 
 MAPE decreases steadily as $N$ increases across all four instrument types. At $N = 1000$ all instruments price within 0.06% MAPE of the QuantLib Crank-Nicolson reference.
@@ -60,12 +58,16 @@ double european_call = priceEuropeanCall(S, v, T, N, K, r);
 ```
 
 ### Validation runner
-
+1. Select a validation dataset from the validation folder and assign path to 'datasetPath' variable in main
+2. Select option type by assigning pricingType to one of the following values:
 ```cpp
-// In Testers.cpp — set pricingType and datasetPath, then:
-// 1 = European Call, 2 = European Put, 3 = American Call, 4 = American Put
-./pricer   // enter N at the prompt; outputs mean absolute percentage error
+1 = European Call,
+2 = European Put,
+3 = American Call,
+4 = American Put
 ```
+3. Compile and run both Tester and Pricer together. After running the user will be prompted and allowed to select number of time steps used.
+4. Mean absolute percent error between the dataset price and the model price is returned
 
 ## References
 
