@@ -73,12 +73,5 @@ int main() {
     double avgError = computeAverageErrorAgainstActual(datasetPath, pricingType, numSteps);
     std::cout << "European Call Average percent error (%): " << avgError << "\n";
 
-    avgError = computeAverageErrorAgainstActual("validation/EuropeanPuts.csv", 2, numSteps);
-    std::cout << "European Put average percent error (%): " << avgError << "\n";
-    avgError = computeAverageErrorAgainstActual("validation/AmericanCalls.csv", 3, numSteps);
-    std::cout << "American Call average percent error (%): " << avgError << "\n";
-    avgError = computeAverageErrorAgainstActual("validation/AmericanPuts.csv", 4, numSteps);
-    std::cout << "American Put average percent error (%): " << avgError << "\n";
-
     return 0;
 }
