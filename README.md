@@ -1,6 +1,6 @@
 # Binomial Tree Option Pricer (CRR)
 
-A C++ implementation of the Cox-Ross-Rubinstein binomial tree model for pricing European and American options. This repo is part of a larger portfolio of option pricing methods; companion implementations include a LSM Monte Carlo pricer (https://github.com/Clbrainard/Binomial-Options).
+A C++ implementation of the Cox-Ross-Rubinstein binomial tree model for pricing European and American options. This repo is part of a larger portfolio of option pricing methods; companion implementations include a [LSM Monte Carlo pricer](https://github.com/Clbrainard/Monte-Carlo-Options)
 
 ## Supported Instruments
 
